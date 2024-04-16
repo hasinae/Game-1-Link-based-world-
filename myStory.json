@@ -1,0 +1,97 @@
+{
+    "Title": "The Academy of Magical Arts",
+    "Credits": "Created by Hasina Esteqlal (hesteqla@ucsc.edu)",
+    "InitialLocation": "Entrance Hall",
+    "Locations": {
+        "Entrance Hall": {
+            "Body": "A grand hall with towering pillars and magical artifacts lining the walls.",
+            "Choices": [
+                {
+                    "Text": "North",
+                    "Target": "Great Hall"
+                },
+                {
+                    "Text": "East",
+                    "Target": "Library"
+                }
+            ]
+        },
+        "Great Hall": {
+            "Body": "A vast room with long tables, where students gather.",
+            "Choices": [
+                {
+                    "Text": "North",
+                    "Target": "Courtyard"
+                },
+                {
+                    "Text": "South",
+                    "Target": "Entrance Hall"
+                }
+            ]
+        },
+        "Library": {
+            "Body": "A massive library filled with ancient tomes and mystical scrolls.",
+            "Choices": [
+                {
+                    "Text": "West",
+                    "Target": "Entrance Hall"
+                },
+                {
+                    "Text": "North",
+                    "Target": "Restricted Section"
+                }
+            ]
+        },
+        "Courtyard": {
+            "Body": "An area surrounded by towering spires with enchanted flowers.",
+            "Choices": [
+                {
+                    "Text": "East",
+                    "Target": "Tower of Magi"
+                },
+                {
+                    "Text": "South",
+                    "Target": "Great Hall"
+                }
+            ],
+            "SpecialMechanism": "Magical Fountain"
+        },
+        "Tower of Magi": {
+            "Body": "A tall tower where advanced students study the arts under the guidance of master wizards.",
+            "Choices": [
+                {
+                    "Text": "West",
+                    "Target": "Courtyard"
+                },
+                {
+                    "Text": "Ascend",
+                    "Target": "Observatory",
+                    "Requirements": "Permission"
+                }
+            ],
+            "Lock": "Magical Door"
+        },
+        "Observatory": {
+            "Body": " A room at the top of the Tower of Magi, offering a breathtaking view of the cosmos.",
+            "Choices": [
+                {
+                    "Text": "Descend",
+                    "Target": "Tower of Magi"
+                }
+            ],
+            "Key": "Crystal"
+        },
+        "Restricted Section": {
+            "Body": "A secluded area of the library housing dangerous and forbidden knowledge.",
+            "Choices": [
+                {
+                    "Text": "South",
+                    "Target": "Library"
+                }
+            ]
+        },
+        "Beyond": {
+            "Body": " A mysterious realm accessible only to those who have mastered the most powerful spells and incantations."
+        }
+    }
+}
